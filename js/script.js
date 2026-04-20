@@ -15,31 +15,31 @@
 // =====================================================
 // Hint: Make a variable for your name using let
 // Write your code here:
-
+let name ="Gabriel";
 
 // Hint: Make a variable for something you like (a hobby, food, show, anything)
 // Write your code here:
-
+let likes = "reading, DND, and nature parks";
 
 // Hint: Make a variable for your birth year. This one should use const
 // (since your birth year will never change!)
 // Write your code here:
 
-
+const birthYear = 1989;
 
 // =====================================================
 // STEP 2: Do some math to figure out your age in months
 // =====================================================
 // Hint: First make a variable called currentYear and set it to 2026
-
+let currentYear = 2026;
 
 // Hint: Now make a variable called ageYears using subtraction
 // (currentYear minus your birth year)
 
-
+let ageYears = currentYear - birthYear;
 // Hint: Now make a variable called ageMonths by multiplying ageYears by 12
 
-
+let ageMonths  = ageYears * 12;
 
 // =====================================================
 // STEP 3: Change what's on the page
@@ -53,23 +53,23 @@
 
 // Hint: Change the h1 so it says a greeting with your name
 
-
+document.getElementById("intro").textContent = "Hi, I'm " + name + "!";
 // Hint: Change the first paragraph so it says your age in months
 
-
+document.getElementById("date").textContent = "I am " + ageMonths + " months old.";
 // Hint: Change the second paragraph so it says something fun using your hobby variable
 
-
+document.getElementById("bio").textContent = "My hoobies are " + likes + ".";
 
 // =====================================================
 // STEP 4: Add console logs to check your work
 // =====================================================
 // Hint: Log your name to the console
 
-
+console.log(name);
 // Hint: Log your age in years to the console
 
-
+console.log(ageYears);
 
 // =====================================================
 // STEP 5 (BONUS): Use typeof
@@ -78,7 +78,7 @@
 // what type of data ageMonths is. Use typeof!
 // Example format: "Fun fact: ageMonths is a number"
 
-
+document.getElementById("small-text").textContent = "Fun fact: ageMOnths is a " + typeof ageMonths + ".";
 
 // =====================================================
 // DONE! Save everything and open index.html in a browser.
